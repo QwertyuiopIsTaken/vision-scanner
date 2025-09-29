@@ -1,7 +1,7 @@
 const vision = require('@google-cloud/vision');
 
 const client = new vision.ImageAnnotatorClient({
-    keyFilename: 'api_key/spiritual-storm-472203-q8-5702d96bdc21.json'
+    keyFilename: 'api_key/(paste api key file name here).json' // Path to your api file
 });
 
 const fs = require('fs');
