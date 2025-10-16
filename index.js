@@ -66,7 +66,7 @@ async function extractNameAndIdFromImage(filePath) {
   for (const file of files) {
     const filePath = path.join(IMAGES_DIR, file);
     const { lastName, firstName, middleName, id } = await extractNameAndIdFromImage(filePath);
-    console.log(`\n🖼️ ${file}`);
+    console.log(`\n${file}`);
     console.log(`Extracted → ${lastName}, ${firstName} ${middleName}`);
     console.log(`ID → ${id || "(none)"}`);
     results.push([file, lastName, firstName, middleName, id]);
@@ -76,5 +76,5 @@ async function extractNameAndIdFromImage(filePath) {
   const resultsFile = path.join(RESULTS_DIR, `results_${timestamp}.csv`);
 
   fs.writeFileSync(resultsFile, results.map(r => r.join(",")).join("\n"));
-  console.log(`\n✅ Results saved to ${resultsFile}`);
+  console.log(`\nResults saved to ${resultsFile}`);
 })();
