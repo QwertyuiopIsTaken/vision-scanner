@@ -1,4 +1,4 @@
-# Image-Data-Analyzer
+# vision-scanner
 
 A Python GUI application that uses the **Google Cloud Vision API** to extract text data from images (jpg, jpeg, png) and export it into CSV files.
 It supports batch processing and automatically extracts details such as names and IDs from scanned images.
