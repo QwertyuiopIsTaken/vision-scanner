@@ -1,6 +1,5 @@
 import tkinter as tk
 from tkinter import messagebox
-from tkinter import ttk
 from tkinter import filedialog
 from tkinter.constants import *
 from frontend.scrollableframe import ScrollableFrame
